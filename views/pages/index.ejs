@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<%-
+  include('../partials/head',{ titulo})
+  -%>
+  <body>
+    <%- include('../partials/nav') -%>
+    <h1><%= titulo %></h1>
+    <!-- para busqueda usamos get-->
+    <form action="/busqueda_proceso" method="get">
+     <label >
+       Termino de busqueda:
+       <input type="search" name="termino">
+      </label>
+         <input type="submit" value="!buscar!">
+     
+
+    </form>
+  </body>
+</html>
